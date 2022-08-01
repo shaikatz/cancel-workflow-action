@@ -9071,6 +9071,7 @@ async function main() {
                 branch,
             });
             console.log(`Found ${total_count} runs total.`);
+            console.log('Workflow runs', JSON.stringify(workflow_runs));
             let cancelBefore = new Date(current_run.created_at);
             if (all_but_latest) {
                 const n = workflow_runs
